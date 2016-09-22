@@ -5,4 +5,4 @@ Using them for streaming zlib / gzip, iconv, openssl-digests and base64 data tra
 
 Work in progress and not well documented yet.
 
-This project was created in the Eclipse IDE (NEON).
+This project was created in the Eclipse IDE (NEON) under CentOS 7 / Fedora 24.
