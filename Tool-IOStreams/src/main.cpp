@@ -51,8 +51,7 @@ int main(int argc, char *argv[])
         IconvStream toIso(toUtf8, "UTF-8", "ISO8859-15");
         DigestStream digestOut(outfile, l_digest);
         CompressStream compressOut(digestOut);
-        DecodeBase64Stream textOut(outfile2);
-        EncodeBase64Stream base64Out(textOut);
+        EncodeBase64Stream base64Out(outfile2);
 
         toIso << fixed << setprecision(4) << "Hellö Wörldß! Hellö Wörldß! Hellö Wörldß!Hellö Wörldß! @€" << 10232.234;
         toIso.flush();
